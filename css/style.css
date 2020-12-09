@@ -1,0 +1,34 @@
+/* RESET */
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+
+/* CLEARFIX */
+/* .clearfix::after {
+  display: table;
+  content: '';
+  clear: both;
+} */
+
+.bo  div {
+  border: 1px solid black;
+}
+
+.row {
+  border: 1px solid black;
+  height: 100px;
+}
+
+.my-container {
+  margin: 0 auto;
+  width: 90%;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.jumbo-left {
+  width: 45%;
+  height: 100%
+}
