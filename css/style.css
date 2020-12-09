@@ -1,34 +1,123 @@
-/* RESET */
-/* * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-} */
-
-/* CLEARFIX */
-/* .clearfix::after {
-  display: table;
-  content: '';
-  clear: both;
-} */
-
 .bo  div {
-  border: 1px solid black;
-}
-
-.row {
   border: 1px solid black;
   height: 100px;
 }
 
+/* CLASSI HELPER */
+
+.h-80 {
+  height: 80px;
+}
+
+.centered {
+  text-align: center;
+}
+
+
+
+
+/* HEADER NAV */
+
+.logo img {
+  height: 50px;
+}
+
+header ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+header ul li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 10px;
+  line-height: 80px;
+}
+
+.header-right {
+  height: 40px;
+}
+
+/* JUMBOTRON */
+
 .my-container {
   margin: 0 auto;
   width: 90%;
-  height: 200px;
-  border: 1px solid black;
+  padding: 50px 40px 0 60px;
+  height: 450px;
+  position: relative;
+  background-color: #F2F7FF;
+}
+
+.jumbo-left {
+  width: 50%;
+}
+
+.my-jumbotron img {
+  width: 50%;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .jumbo-left {
   width: 45%;
   height: 100%
+}
+
+/* SECTION 1 */
+
+.section-1 {
+  padding-top: 200px;
+}
+
+/* SECTION 2 */
+
+.section-2 {
+  padding-top: 200px;
+}
+
+.img-s2 img {
+  width: 100%;
+}
+
+/* SECTION 3 */
+
+.section-3 {
+  padding-top: 170px;
+  position: relative;
+}
+
+.s3-back {
+  position: absolute;
+  top: 180px;
+  left: -280px;
+  width: 30%;
+}
+
+.card-s3 {
+  margin-right: 16px;
+  margin-bottom: 16px;
+  height: 100px;
+  border: 1px solid black;
+  width: calc(25% - 12px);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+}
+
+.card-s3-cont div:nth-child(4),
+.card-s3-cont div:nth-child(8) {
+  margin-right: 0px;
+}
+
+/* SECTION 4 */
+
+.section-4 {
+  padding-top: 200px;
+}
+
+.section-4 img {
+  border-radius: 50%;
 }

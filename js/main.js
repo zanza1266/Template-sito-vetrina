@@ -1,12 +1,10 @@
-// $(document).ready(function() {})
 
-// const vm = new Vue ({
-//   el: '#root',
-//   data: {
-//
-//   },
-//   mounted () {},
-//   methods: {
-//
-//   }
-// })
+const vm = new Vue ({
+  el: '#root',
+  data: {
+    headerNavLinks: ['Home', 'About us', 'Features', 'Testimonials', 'Contact US']
+  },
+  methods: {
+
+  }
+})

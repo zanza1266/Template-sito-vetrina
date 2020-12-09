@@ -19,138 +19,257 @@
   </head>
 
   <body>
-    <header>
-      <div class="container">
-        <div class="row">
-          <div class="col-2">
+    <div id="root">
+      <header>
+        <div class="container h-80">
+          <div class="row">
+            <div class="col-1 h-80 logo d-flex align-items-center justify-content-between">
+              <img src="img/logo-2.png" alt="">
+            </div>
+            <div class="col d-flex justify-content-end">
+              <ul>
+                <li v-for="link in headerNavLinks">{{link}}</li>
+              </ul>
+            </div>
+            <div class="col-2 d-flex align-items-center justify-content-between">
+              <a href="#"><i class="fas fa-search"></i></a>
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+              <button type="button" name="button">Get Started</button>
 
+            </div>
           </div>
-          <div class="col-8">
+        </div>
+      </header>
 
+      <section class="my-jumbotron">
+        <div class="my-container">
+          <div class="jumbo-left">
+            <h1>The biggest platform for your growt</h1>
+            <p>There are many variiation of passage of lorem ipsum available, but the majority ha saffered alteration in some form</p>
+            <button type="button" name="button">Read more</button>
           </div>
-          <div class="col-2">
+          <img src="img/27-1.png" alt="">
+        </div>
+      </section>
+
+      <section class="section-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <div class="top-casd-s1 d-flex">
+                <div>
+                  <img src="img/24.png" alt="">
+                </div>
+                <div>
+                  <h5>Online Marketing</h5>
+                  <p>Its a long estabilished fact that a reader will be distracted</p>
+                </div>
+              </div>
+              <div class="top-casd-s2">
+                <ul>
+                  <li>SEO</li>
+                  <li>SEM</li>
+                  <li>Website Strategy</li>
+                  <li>Social Management</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="top-casd-s1 d-flex">
+                <div>
+                  <img src="img/24.png" alt="">
+                </div>
+                <div>
+                  <h5>Online Marketing</h5>
+                  <p>Its a long estabilished fact that a reader will be distracted</p>
+                </div>
+              </div>
+              <div class="top-casd-s2">
+                <ul>
+                  <li>SEO</li>
+                  <li>SEM</li>
+                  <li>Website Strategy</li>
+                  <li>Social Management</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="top-casd-s1 d-flex">
+                <div>
+                  <img src="img/24.png" alt="">
+                </div>
+                <div>
+                  <h5>Online Marketing</h5>
+                  <p>Its a long estabilished fact that a reader will be distracted</p>
+                </div>
+              </div>
+              <div class="top-casd-s2">
+                <ul>
+                  <li>SEO</li>
+                  <li>SEM</li>
+                  <li>Website Strategy</li>
+                  <li>Social Management</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 d-flex flex-column">
+              <h2>Get tip tricks on how to skyrocket your sales</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+
+              <div class="card-s2 d-flex">
+                <div class="">
+                  <img src="img/510.png" alt="">
+                </div>
+                <div class="">
+                  <h6>Reporting analysis</h6>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
+                </div>
+              </div>
+              <div class="card-s2 d-flex">
+                <div class="">
+                  <img src="img/511.png" alt="">
+                </div>
+                <div class="">
+                  <h6>Reporting analysis</h6>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 img-s2">
+              <img src="img/509.jpeg" alt="">
+            </div>
 
           </div>
         </div>
-      </div>
-    </header>
+      </section>
 
-    <section class="my-jumbotron bo">
-      <div class="my-container">
-        <div class="jumbo-left">
+      <section class="section-3">
+        <img class="s3-back" src="img/14.png" alt="">
+        <div class="container">
+          <div class="row">
+            <div class="col-9">
+              <h2>Popular features that you business needs</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center">
+              <button type="button" name="button">Explore more faetures</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 d-flex flex-wrap card-s3-cont">
+              <div class="card-s3">
+                <span>Customized Invoices</span>
+                <img src="" alt="">
+              </div>
+              <div class="card-s3">
+                <span>Stock Manager</span>
+                <img src="" alt="">
+              </div>
+              <div class="card-s3">
+                <span>Recaivable and Payable</span>
+                <img src="" alt="">
+              </div>
+              <div class="card-s3">
+                <span>Manage Buying</span>
+                <img src="" alt="">
+              </div>
+              <div class="card-s3 last">
+                <span>powerful and Secure</span>
+                <img src="" alt="">
+              </div>
+              <div class="card-s3">
+                <span>Fastest Return Fling</span>
+                <img src="" alt="">
+              </div>
+              <div class="card-s3">
+                <span>Monthly Detailed</span>
+                <img src="" alt="">
+              </div>
+              <div class="card-s3 last">
+                <span>Product Management</span>
+                <img src="" alt="">
+              </div>
+            </div>
+          </div>
 
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section-1 bo">
-      <div class="container">
-        <div class="row">
-          <div class="col-4">
-
+      <section class="section-4">
+        <div class="container">
+          <div class="centered">
+            <h2>Our Testimonials</h2>
+            <p>if you are planning Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
           </div>
-          <div class="col-4">
 
-          </div>
-          <div class="col-4">
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-2 bo">
-      <div class="container">
-        <div class="row">
-          <div class="col-6">
-
-          </div>
-          <div class="col-6">
-
+          <div class="row">
+            <div class="col-6 d-flex flex-column align-items-center">
+              <img src="img/26.jpeg" alt="">
+              <span>Julia Ann - - COO Sofbox</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+            <div class="col-6 d-flex flex-column align-items-center">
+              <img src="img/27.jpeg" alt="">
+              <span>Mark Zender - - Manager Sofbox</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section-3 bo">
-      <div class="container">
-        <div class="row">
-          <div class="col-9">
+      <section class="section-5 bo">
+        <div class="container">
+          <h1>latest post</h1>
+          <p>if you are planning</p>
+          <div class="row">
+            <div class="col-4">
 
-          </div>
-          <div class="col-3">
+            </div>
+            <div class="col-4">
 
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            cards
+            </div>
+            <div class="col-4">
+
+            </div>
           </div>
         </div>
 
-      </div>
-    </section>
+      </section>
 
-    <section class="section-4 bo">
-      <div class="container">
-        <h1>our testimon</h1>
-        <p>if you are plann</p>
-        <div class="row">
-          <div class="col-6">
+      <section class="section-6 bo">
+        <div class="container">
+          <h1>contact with</h1>
+          <p>if you are planning</p>
+          <div class="row">
+            <div class="col-6">
 
-          </div>
-          <div class="col-6">
+            </div>
+            <div class="col-6">
 
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-5 bo">
-      <div class="container">
-        <h1>latest post</h1>
-        <p>if you are planning</p>
-        <div class="row">
-          <div class="col-4">
-
-          </div>
-          <div class="col-4">
-
-          </div>
-          <div class="col-4">
-
+            </div>
           </div>
         </div>
-      </div>
 
-    </section>
+      </section>
 
-    <section class="section-6 bo">
-      <div class="container">
-        <h1>contact with</h1>
-        <p>if you are planning</p>
-        <div class="row">
-          <div class="col-6">
-
-          </div>
-          <div class="col-6">
-
+      <footer class="bo">
+        <div class="container">
+          <div class="row">
+            <div class="col-3"></div>
+            <div class="col-3"></div>
+            <div class="col-3"></div>
+            <div class="col-3"></div>
           </div>
         </div>
-      </div>
-
-    </section>
-
-    <footer class="bo">
-      <div class="container">
-        <div class="row">
-          <div class="col-3"></div>
-          <div class="col-3"></div>
-          <div class="col-3"></div>
-          <div class="col-3"></div>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
 
     <script src="js/main.js" charset="utf-8"></script>
   </body>
