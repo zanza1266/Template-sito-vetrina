@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -28,13 +31,19 @@
             </div>
             <div class="col d-flex justify-content-end">
               <ul>
-                <li v-for="link in headerNavLinks">{{link}}</li>
+                <li v-for="link in headerNavLinks"> <a href="#">{{link}}</a> </li>
               </ul>
             </div>
-            <div class="col-2 d-flex align-items-center justify-content-between">
-              <a href="#"><i class="fas fa-search"></i></a>
-              <a href="#"><i class="fas fa-shopping-cart"></i></a>
-              <button type="button" name="button">Get Started</button>
+            <div class="col-3 d-flex align-items-center justify-content-around nav-right">
+              <a href="#" class="no-dec"><i class="fas fa-search"></i></a>
+              <div class="cart-container">
+                <div class="cart-notification">
+                  <span>1</span>
+                </div>
+                <a href="#" class="no-dec"><i class="fas fa-shopping-cart"></i></a>
+              </div>
+
+              <button class="btn btn-primary" type="submit">Get Started</button>
 
             </div>
           </div>
@@ -44,9 +53,9 @@
       <section class="my-jumbotron">
         <div class="my-container">
           <div class="jumbo-left">
-            <h1>The biggest platform for your growt</h1>
-            <p>There are many variiation of passage of lorem ipsum available, but the majority ha saffered alteration in some form</p>
-            <button type="button" name="button">Read more</button>
+            <h1>The biggest platform for your growt.</h1>
+            <p class="grey mt-50">There are many variiation of passage of lorem ipsum available, but the majority ha saffered alteration in some form.</p>
+            <button class="btn btn-primary mt-50" type="submit">Read More</button>
           </div>
           <img src="img/27-1.png" alt="">
         </div>
@@ -56,59 +65,59 @@
         <div class="container">
           <div class="row">
             <div class="col-4">
-              <div class="top-casd-s1 d-flex">
-                <div>
+              <div class="top-card-s1 d-flex">
+                <div class="d-flex align-items-center justify-content-center">
                   <img src="img/24.png" alt="">
                 </div>
                 <div>
-                  <h5>Online Marketing</h5>
-                  <p>Its a long estabilished fact that a reader will be distracted</p>
+                  <h5 class="mb-20 w-600">Online Marketing</h5>
+                  <p class="grey">Its a long estabilished fact that a reader will be distracted</p>
                 </div>
               </div>
-              <div class="top-casd-s2">
+              <div class="bottom-card-s1">
                 <ul>
-                  <li>SEO</li>
-                  <li>SEM</li>
-                  <li>Website Strategy</li>
-                  <li>Social Management</li>
+                  <li><i class="fas fa-check"></i>SEO</li>
+                  <li><i class="fas fa-check"></i>SEM</li>
+                  <li><i class="fas fa-check"></i>Website Strategy</li>
+                  <li><i class="fas fa-check"></i>Social Management</li>
                 </ul>
               </div>
             </div>
             <div class="col-4">
-              <div class="top-casd-s1 d-flex">
-                <div>
+              <div class="top-card-s1 d-flex">
+                <div class="d-flex align-items-center justify-content-center">
                   <img src="img/24.png" alt="">
                 </div>
                 <div>
-                  <h5>Online Marketing</h5>
-                  <p>Its a long estabilished fact that a reader will be distracted</p>
+                  <h5 class="mb-20 w-600">Online Marketing</h5>
+                  <p class="grey">Its a long estabilished fact that a reader will be distracted</p>
                 </div>
               </div>
-              <div class="top-casd-s2">
+              <div class="bottom-card-s1">
                 <ul>
-                  <li>SEO</li>
-                  <li>SEM</li>
-                  <li>Website Strategy</li>
-                  <li>Social Management</li>
+                  <li><i class="fas fa-check"></i>SEO</li>
+                  <li><i class="fas fa-check"></i>SEM</li>
+                  <li><i class="fas fa-check"></i>Website Strategy</li>
+                  <li><i class="fas fa-check"></i>Social Management</li>
                 </ul>
               </div>
             </div>
             <div class="col-4">
-              <div class="top-casd-s1 d-flex">
-                <div>
+              <div class="top-card-s1 d-flex">
+                <div class="d-flex align-items-center justify-content-center">
                   <img src="img/24.png" alt="">
                 </div>
                 <div>
-                  <h5>Online Marketing</h5>
-                  <p>Its a long estabilished fact that a reader will be distracted</p>
+                  <h5 class="mb-20 w-600">Online Marketing</h5>
+                  <p class="grey">Its a long estabilished fact that a reader will be distracted</p>
                 </div>
               </div>
-              <div class="top-casd-s2">
+              <div class="bottom-card-s1">
                 <ul>
-                  <li>SEO</li>
-                  <li>SEM</li>
-                  <li>Website Strategy</li>
-                  <li>Social Management</li>
+                  <li><i class="fas fa-check"></i>SEO</li>
+                  <li><i class="fas fa-check"></i>SEM</li>
+                  <li><i class="fas fa-check"></i>Website Strategy</li>
+                  <li><i class="fas fa-check"></i>Social Management</li>
                 </ul>
               </div>
             </div>
@@ -120,27 +129,28 @@
         <div class="container">
           <div class="row">
             <div class="col-6 d-flex flex-column">
-              <h2>Get tip tricks on how to skyrocket your sales</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+              <h1 class="mb-20">Get tip tricks on how to skyrocket your sales.</h1>
+              <p class="mb-50 grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
 
-              <div class="card-s2 d-flex">
-                <div class="">
+              <div class="card-s2 shadow d-flex">
+                <div class="d-flex justify-content-center align-items-center p-20">
                   <img src="img/510.png" alt="">
                 </div>
                 <div class="">
-                  <h6>Reporting analysis</h6>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
+                  <h6 class="mb-20 blue w-600">Reporting analysis</h6>
+                  <p class="grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
                 </div>
               </div>
               <div class="card-s2 d-flex">
-                <div class="">
-                  <img src="img/511.png" alt="">
+                <div class="d-flex justify-content-center align-items-center p-20">
+                  <img src="img/510.png" alt="">
                 </div>
                 <div class="">
-                  <h6>Reporting analysis</h6>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
+                  <h6 class="mb-20 blue w-600">Reporting analysis</h6>
+                  <p class="grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
                 </div>
               </div>
+
             </div>
             <div class="col-6 img-s2">
               <img src="img/509.jpeg" alt="">
@@ -155,47 +165,48 @@
         <div class="container">
           <div class="row">
             <div class="col-9">
-              <h2>Popular features that you business needs</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h2 class="mb-30">Popular features that you business needs</h2>
+              <p class="grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="col-3 d-flex align-items-center justify-content-center">
-              <button type="button" name="button">Explore more faetures</button>
+              <button class="btn btn-primary" type="submit">Explore More Features</button>
             </div>
           </div>
           <div class="row">
             <div class="col-12 d-flex flex-wrap card-s3-cont">
               <div class="card-s3">
-                <span>Customized Invoices</span>
-                <img src="" alt="">
+                <span class="w-600 mb-20">Customized Invoices</span>
+                <i class="fas fa-paper-plane blue"></i>
               </div>
               <div class="card-s3">
-                <span>Stock Manager</span>
-                <img src="" alt="">
+                <span class="w-600 mb-20">Stock Manager</span>
+                <i class="fas fa-building red"></i>
               </div>
               <div class="card-s3">
-                <span>Recaivable and Payable</span>
-                <img src="" alt="">
+                <span class="w-600 mb-20">Receivable and Payebles</span>
+                <i class="fas fa-mail-bulk green"></i>
               </div>
               <div class="card-s3">
-                <span>Manage Buying</span>
-                <img src="" alt="">
-              </div>
-              <div class="card-s3 last">
-                <span>powerful and Secure</span>
-                <img src="" alt="">
+                <span class="w-600 mb-20">Manage Buying</span>
+                <i class="far fa-newspaper blue"></i>
               </div>
               <div class="card-s3">
-                <span>Fastest Return Fling</span>
-                <img src="" alt="">
+                <span class="w-600 mb-20">Powerful and Secure</span>
+                <i class="fas fa-chart-pie red"></i>
               </div>
               <div class="card-s3">
-                <span>Monthly Detailed</span>
-                <img src="" alt="">
+                <span class="w-600 mb-20">Fastest Return Filing</span>
+                <i class="fab fa-searchengin green"></i>
               </div>
-              <div class="card-s3 last">
-                <span>Product Management</span>
-                <img src="" alt="">
+              <div class="card-s3">
+                <span class="w-600 mb-20">Monthly Detailed</span>
+                <i class="fas fa-donate blue"></i>
               </div>
+              <div class="card-s3">
+                <span class="w-600 mb-20">Product Manager</span>
+                <i class="fas fa-chart-line red"></i>
+              </div>
+
             </div>
           </div>
 
