@@ -417,3 +417,33 @@ footer ul {
 .btn-primary:hover {
   background-color: black;
 }
+
+/* SCROLL TO TOP BUTTON */
+
+.myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 4;
+  height: 50px;
+  width: 50px;
+  font-size: 18px;
+  background-color: lightgrey;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background .2s, height .2s;
+}
+
+.myBtn:hover {
+  background-color: #377DFF;
+}
+
+.none {
+  /* display: none; */
+  height: 0px;
+  width: 0px;
+}
