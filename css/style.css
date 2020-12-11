@@ -4,6 +4,10 @@ html {
 
 /* CLASSI HELPER */
 
+.rel {
+  position: relative;
+}
+
 .w-600 {
   font-weight: 600;
 }
@@ -20,8 +24,16 @@ html {
   padding: 20px;
 }
 
+.p-10 {
+  padding: 10px;
+}
+
 .pt-150 {
   padding-top: 150px;
+}
+
+.pt-50 {
+  padding-top: 50px;
 }
 
 .pb-150 {
@@ -53,12 +65,15 @@ html {
   color: #6CDAC1;
 }
 
+.ml-10 {
+  margin-left: 10px;
+}
 
 .mt-50 {
   margin-top: 50px;
 }
 
-.mt.30 {
+.mt-30 {
   margin-top: 30px;
 }
 
@@ -72,6 +87,14 @@ html {
 
 .mb-30 {
   margin-bottom: 30px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
 }
 
 
@@ -107,8 +130,6 @@ header ul li a:hover {
   text-decoration: none;
 }
 
-
-
 .cart-container {
   position: relative;
 }
@@ -127,6 +148,7 @@ header ul li a:hover {
   justify-content: center;
   align-items: center;
 }
+
 
 /* JUMBOTRON */
 
@@ -155,9 +177,6 @@ header ul li a:hover {
   height: 100%
 }
 
-.jumbo-left button:hover {
-  background-color: black;
-}
 
 /* SECTION 1 */
 
@@ -199,6 +218,7 @@ header ul li a:hover {
 .shadow {
   box-shadow: 0px 25px 35px -20px lightgrey;
 }
+
 
 /* SECTION 3 */
 
@@ -251,6 +271,7 @@ header ul li a:hover {
   margin-right: 0px;
 }
 
+
 /* SECTION 4 */
 
 .section-4 {
@@ -260,25 +281,48 @@ header ul li a:hover {
   padding-top: 30px;
 }
 
-.back {
+.card-s4 {
+  padding: 40px 40px;
+  box-shadow: 0px 0px 30px -5px lightgrey;
+  z-index: 2;
+  position: relative;
+  background-color: white;
+}
+
+.card-s4-hidden-1 {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  background-color: white;
+  width: calc(100% - 20px);
+  height: calc(100% + 10px);
+  z-index: 1;
+  box-shadow: 0px 0px 30px -5px lightgrey;
+}
+
+.card-s4-hidden-2 {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  background-color: white;
+  width: calc(100% - 40px);
+  height: calc(100% + 20px);
+  z-index: 0;
+  box-shadow: 0px 0px 30px -5px lightgrey;
+}
+
+.back-wave {
   width: 85%;
   position: absolute;
-  top: -36px;
+  top: -3px;
   left: 0;
   z-index: 0;
 }
 
-.section-4 img {
+.section-4 .profile {
   border-radius: 50%;
-}
-
-.square {
-  background-color: white;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: -5px;
-  left: 0;
+  width: 80px;
+  margin-bottom: 40px;
 }
 
 .section-4 .centered {
@@ -286,11 +330,31 @@ header ul li a:hover {
   position: relative;
 }
 
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #377DFF;
+}
+
+
 /* SECTION 5 */
 
 .section-5 {
   padding-top: 200px;
 }
+
+.card-s5 .date {
+  padding: 5px 8px;
+  color: #8e989f;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
 
 /* SECTION 6 */
 
@@ -305,22 +369,29 @@ header ul li a:hover {
 }
 
 .form img {
-  width: 100px;
+  width: 130px;
 }
 
 .socials {
-  width: 250px;
+  width: 200px;
   padding: 10px 0;
 }
 
 .socials > div {
-  height: 50px;
-  width: 50px;
-  border: 1px solid grey;
+  height: 40px;
+  width: 40px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background .2s;
 }
+
+.socials > div:hover {
+  background-color: lightgrey;
+}
+
 
 /* FOOTER */
 
@@ -332,6 +403,17 @@ footer {
   padding: 30px 0;
 }
 
+footer ul {
+  padding: 0;
+  margin: 0;
+}
+
 .footer-sec ul li {
   list-style: none
+}
+
+/* HOVER BUTTONS */
+
+.btn-primary:hover {
+  background-color: black;
 }

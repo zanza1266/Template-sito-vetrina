@@ -10,4 +10,4 @@ const vm = new Vue ({
   methods: {
 
   }
-})
+});
