@@ -435,7 +435,7 @@ footer ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background .2s, height .2s;
+  transition: background .2s, height .5s;
 }
 
 .myBtn:hover {
@@ -443,7 +443,7 @@ footer ul {
 }
 
 .none {
-  /* display: none; */
   height: 0px;
-  width: 0px;
+  width: 50px;
+  transition: height .2s;
 }

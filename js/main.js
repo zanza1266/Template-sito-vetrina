@@ -8,6 +8,7 @@ const vm = new Vue ({
     footerQuickLinks: ['About Us', 'Theme', 'Features', 'Pricing', 'Blog'],
   },
   mounted() {
+
     window.onscroll = function() {
 
       let btn = document.getElementById('scroll');
@@ -20,11 +21,11 @@ const vm = new Vue ({
         btn.classList.remove('none');
       }
     };
-
   },
   methods: {
     backToTop: function () {
-      document.documentElement.scrollTop = 0;
+
+      window.scrollTo(0, 0);
     }
   }
 });
